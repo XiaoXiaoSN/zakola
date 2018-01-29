@@ -1,0 +1,8 @@
+.ui.horizontal.divider{
+	line-height:2 ;
+}
+
+@media only screen and (max-width: 767px)
+.ui.items>.item>.image {
+    margin-left: initial!important;
+}

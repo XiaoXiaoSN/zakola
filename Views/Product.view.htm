@@ -1,0 +1,184 @@
+
+<div class="ui divider"></div><!--JustLine-->
+
+<div class="ui breadcrumb"><!--rorute-->
+    <a class="section">Zakola</a>
+    <i class="right angle icon divider"></i>
+    <a class="section">Animal</a>
+    <i class="right angle icon divider"></i>
+    <a class="section">Pokemon</a>
+    <i class="right angle icon divider"></i>
+    <div class="active section">Pika</div>
+</div>
+
+<h4 class="ui horizontal divider header">
+    {{sell_title}}
+</h4>
+<div class="ui items">
+    <div class="item">
+        <div class="ui small image" style="margin-left: initial!important;"><!--MainPicture-->
+            <img src="{{sell_photo}}">
+        </div>
+        <div class="content"><!--產品介紹-->
+            <div class="description">
+                <p>{{sell_description}}</p>
+                <br></br>
+                <a class="ui label">I'm</a>
+                <a class="ui label">Tag</a>
+            </div>
+            <br>
+            <div class="description"><!--HowMany-->
+                <h2 class="ui sub header">
+                    剩餘數量
+                </h2>
+                <span>{{sell_quantity}}</span>
+            </div>
+            <div class="description"><!--Price-->
+                <h2 class="ui sub header">
+                    Price
+                </h2>
+                <span>${{sell_price}}</span>
+            </div>
+            
+            <div class="ui right floated animated button" tabindex="0">
+                <div class="visible content">Next</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </div>
+            <div class="ui right floated vertical animated button" tabindex="0">
+                <div class="hidden content">Shop</div>
+                <div class="visible content">
+                    <i class="shop icon"></i>
+                </div>
+            </div>
+            <div class="ui right floated animated fade button" tabindex="0">
+                <div class="visible content">Buy</div>
+                <div class="hidden content">Now</div>
+            </div>
+            <button class="ui basic button"  onclick="$('.small.modal').modal('show')">
+                檢舉
+            </button>
+        </div>
+    </div>
+</div>
+<h4 class="ui horizontal divider header">
+    More Pictures
+</h4>
+<div class="ui small images">
+    <img src="http://i.imgur.com/AYMaRch.gif">
+    <img src="http://i.imgur.com/AYMaRch.gif">
+    <img src="http://i.imgur.com/AYMaRch.gif">
+    <img src="http://i.imgur.com/AYMaRch.gif">
+    <img src="http://i.imgur.com/AYMaRch.gif">
+</div>
+<h4 class="ui horizontal divider header">
+    Comment
+</h4>
+<div class="ui comments">
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/small/matt.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Matt</a>
+            <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+            </div>
+            <div class="text">
+                How artistic!
+            </div>
+            <div class="actions">
+                <a class="reply">Reply</a>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/small/elliot.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Elliot Fu</a>
+            <div class="metadata">
+                <span class="date">Yesterday at 12:30AM</span>
+            </div>
+            <div class="text">
+                <p>This has been very useful for my research. Thanks as well!</p>
+            </div>
+            <div class="actions">
+                <a class="reply">Reply</a>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <a class="avatar">
+                    <img src="/images/avatar/small/jenny.jpg">
+                </a>
+                <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                        <span class="date">Just now</span>
+                    </div>
+                    <div class="text">
+                        Elliot you are always so right :)
+                    </div>
+                    <div class="actions">
+                        <a class="reply">Reply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <a class="avatar">
+            <img src="/images/avatar/small/joe.jpg">
+        </a>
+        <div class="content">
+            <a class="author">Joe Henderson</a>
+            <div class="metadata">
+                <span class="date">5 days ago</span>
+            </div>
+            <div class="text">
+                Dude, this is awesome. Thanks so much
+            </div>
+            <div class="actions">
+                <a class="reply">Reply</a>
+            </div>
+        </div>
+    </div>
+    <form class="ui reply form">
+        <div class="field">
+            <textarea></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button">
+            <i class="icon edit"></i> Add Reply
+        </div>
+    </form>
+</div>
+
+<div class="ui small modal">
+    <div class="ui attached message">
+        <div class="header">檢舉拍賣商品</div>
+        <div class="ui justified container">
+            
+        </div>
+    </div>
+    <form class="ui form attached fluid segment">
+        <div class="field">
+            <label>原因</label>
+            <textarea rows="3"></textarea>
+        </div>
+
+        <div class="field">
+            <label>想告訴賣家...</label>
+            <textarea rows="2"></textarea>
+        </div>
+        
+        <div class="ui blue submit button">Submit</div>
+    </form>
+    <div class="ui bottom attached info message">
+        <i class="icon help"></i>
+        不清楚?&nbsp;查看
+        <a href="">檢舉說明</a>
+    </div>
+</div>

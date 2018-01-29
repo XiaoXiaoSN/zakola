@@ -1,0 +1,24 @@
+/* if media width >= 1200 px */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* if media 768 px <= width <= 979 px */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* if media width <= 768 px */
+@media screen and (max-width: 767px) {
+
+}
+
+/* if media width <= 480 px */
+@media screen and (max-device-width: 480px) {
+
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+.noto {
+  font-family: 'Noto Sans TC', sans-serif!important;
+}

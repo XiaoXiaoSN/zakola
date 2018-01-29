@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	
+	tinymce.init({
+		selector: 'textarea#text',
+		language_url : '/Resource/tinymce/langs/zh_TW.js'
+	});
+
+	$("#art").submit(function(e){
+		e.preventDefault();
+		var editor = tinymce.EditorManager.get('text');
+		$.ajax({
+			type:"POST",
+			data:{
+				title:"test",
+				text:editor.getContent(),
+			},
+			success:function(data) {
+				window.location.href=data.results;
+			},
+			error:function(data) {
+				console.log("error");
+			}
+		});
+
+	});
+</script>
+
+
+
+<form class="ui container" id="art">
+	<textarea name="text" id="text"></textarea>
+	<button class="btn">送出會在網址有東西</button>
+</form>
